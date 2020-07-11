@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# coding=utf-8
 import requests
 from os import remove
 from os import path
@@ -11,12 +12,13 @@ if __name__ == '__main__':
 
     print ("""-----------------------------------------------
     Meow ^-^
-    creado By KatoCrew
+    Creado By KatoCrew
+    Modificado by JonatanHN </>
 -----------------------------------------------
     """)
 
-    vic = input("escribe El Correo De La Víctima: ")
-    de = input("Escribe el correo del remitente: ")
+    vic = input("Escribe el correo de la Víctima: ")
+    de = input("Escribe el correo del Remitente: ")
     rev = de.find('@')
     dom = (de[rev:])
     archivo = "mails.txt"
@@ -30,6 +32,7 @@ if __name__ == '__main__':
 ----
     Meow ^-^
     creado By KatoCrew
+    Modificado by JonatanHN </>
 -----------------------------------------------
     """)
         print ('''
@@ -40,7 +43,7 @@ if __name__ == '__main__':
             ''')
     else:
         asu = input("escribe el asunto: ")
-        tipo = input("tu correo estara en html (presiona 'h') o Sera solo texto? (presiona solo 't'): ")
+        tipo = input("Tu correo estara en html (presiona 'h') o Sera solo texto? (presiona solo 't'): ")
         if tipo == 'h':
             print ("""
             Se Enviara El Contenido De html.txt
@@ -61,16 +64,17 @@ if __name__ == '__main__':
 --------
     Meow ^-^
     creado By KatoCrew
+    Modificado by JonatanHN </>
 -----------------------------------------------
 """)
                 print(response.text)
                 print("""
-            estos son tus datos:
+            Estos son tus Datos:
                 """)
                 print ("De : " + de)
                 print ("Para : " + vic)
                 print ("Asunto : " + asu)
-                print ("mensaje : " + msg)
+                print ("Mensaje : " + msg)
                 f.close()
             else:
                 os.system("clear")
@@ -78,12 +82,13 @@ if __name__ == '__main__':
 --------
     Meow ^-^
     creado By KatoCrew
+    Modificado by JonatanHN </>
 -----------------------------------------------
     """)
-                print('La Pag No Funciona, Avisale a Kato')
+                print('Error de pagina, Avisale a Kato')
                 
         else:
-            msg=input("escribe el mensaje: ")
+            msg=input("Escribe el mensaje: ")
             url = 'http://egmileniamail.000webhostapp.com/enviado.php'
             args = {
                 'to':''+vic+'',
@@ -98,16 +103,17 @@ if __name__ == '__main__':
 --------
     Meow ^-^
     creado By KatoCrew
+    Modificado by JonatanHN </>
 -----------------------------------------------
 """)
                 print(response.text)
                 print("""
-            estos son tus datos:
+            Estos son tus Datos:
                 """)
                 print ("De : " + de)
                 print ("Para : " + vic)
                 print ("Asunto : " + asu)
-                print ("mensaje : " + msg)
+                print ("Mensaje : " + msg)
                 f.close()
             else:
                 os.system("clear")
@@ -115,9 +121,10 @@ if __name__ == '__main__':
 --------
     Meow ^-^
     creado By KatoCrew
+    Modificado by JonatanHN </>
 -----------------------------------------------
     """)
-                print('La Pag No Funciona, Avisale a Kato')
+                print('Error de pagina, Avisale a Kato')
             
             
             
